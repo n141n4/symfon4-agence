@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}Mon agence
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary shadow ">
+    <a href="/" class="navbar-brand mb-0 h1 ">Mon agence</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="{{ path('property.index') }}" class="nav-link">Acheter</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% block body %}{% endblock %}
+{% block javascripts %}
+{% endblock %}
+</body>
+</html>
