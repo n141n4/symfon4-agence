@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefdef2b-957d-4bd2-9f9d-f35371e1a742" name="Default Changelist" comment="" />
+    <list default="true" id="aefdef2b-957d-4bd2-9f9d-f35371e1a742" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/property/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/forms.fr.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/my_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +54,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -129,6 +168,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g3Al2U5lkR2rQreNPK5aA3sKCq" />
@@ -137,16 +177,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/admin/property" />
+      <recent name="$PROJECT_DIR$/src/Controller/Admin" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -162,33 +211,101 @@
       <workItem from="1597333090168" duration="4620000" />
       <workItem from="1597342260256" duration="2227000" />
       <workItem from="1597344650840" duration="8987000" />
-      <workItem from="1597504119518" duration="5874000" />
+      <workItem from="1597504119518" duration="16462000" />
+      <workItem from="1597590030406" duration="9024000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="489" y="267" key="#Composer" timestamp="1597336853175">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="489" y="267" key="#Composer/0.0.1366.768@0.0.1366.768" timestamp="1597336853175" />
-    <state x="406" y="203" width="546" height="353" key="#Notifications" timestamp="1597342285631">
+    <state x="406" y="203" width="546" height="353" key="#Notifications" timestamp="1597590183224">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="406" y="203" width="546" height="353" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1597342285631" />
+    <state x="406" y="203" width="546" height="353" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1597590183224" />
     <state x="282" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597348403536">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="282" y="50" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1597348403536" />
+    <state x="25" y="189" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597513966351">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="25" y="189" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1597513966351" />
+    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1597600196101">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1597600196101" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597515431553">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1597515431553" />
+    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1597591918374">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1597591918374" />
+    <state x="99" y="100" width="1168" height="569" key="DiffContextDialog" timestamp="1597590490106">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="99" y="100" width="1168" height="569" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1597590490106" />
+    <state x="4" y="100" key="NewPhpClassDialog" timestamp="1597514226387">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="4" y="100" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1597514226387" />
+    <state x="171" y="318" key="NewPhpFileDialog" timestamp="1597514083934">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="171" y="318" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597514083934" />
+    <state x="403" y="9" key="RollbackChangesDialog" timestamp="1597591894458">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="403" y="9" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1597591894458" />
     <state x="0" y="0" width="1366" height="768" key="SettingsEditor" timestamp="1597344915641">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="0" y="0" width="1366" height="768" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1597344915641" />
-    <state x="346" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1597512883704">
+    <state x="0" y="0" width="1366" height="768" key="Vcs.Push.Dialog.v2" timestamp="1597591905173">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="88" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1597512883704" />
+    <state x="0" y="0" width="1366" height="768" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1597591905173" />
+    <state x="69" y="140" key="refactoring.ChangeSignatureDialog" timestamp="1597600375653">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="69" y="140" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1597600375653" />
+    <state x="346" y="171" key="run.anything.popup" timestamp="1597515527654">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="171" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597515527654" />
+    <state x="208" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1597604040906">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="208" y="88" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1597604040906" />
   </component>
 </project>
