@@ -17,21 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefdef2b-957d-4bd2-9f9d-f35371e1a742" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,6 +185,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -224,7 +215,7 @@
       <workItem from="1597344650840" duration="8987000" />
       <workItem from="1597504119518" duration="16462000" />
       <workItem from="1597590030406" duration="10880000" />
-      <workItem from="1598023948149" duration="7415000" />
+      <workItem from="1598023948149" duration="10612000" />
     </task>
     <servers />
   </component>
@@ -272,10 +263,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="25" y="189" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1597513966351" />
-    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1597600196101">
+    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1598036059219">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1597600196101" />
+    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598036059219" />
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597515431553">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -288,14 +279,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="99" y="100" width="1168" height="569" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1597590490106" />
-    <state x="4" y="100" key="NewPhpClassDialog" timestamp="1597514226387">
+    <state x="4" y="100" key="NewPhpClassDialog" timestamp="1598035921719">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="4" y="100" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1597514226387" />
-    <state x="171" y="318" key="NewPhpFileDialog" timestamp="1597514083934">
+    <state x="4" y="100" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1598035921719" />
+    <state x="171" y="318" key="NewPhpFileDialog" timestamp="1598035906880">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="171" y="318" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597514083934" />
+    <state x="171" y="318" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1598035906880" />
     <state x="403" y="9" key="RollbackChangesDialog" timestamp="1597591894458">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -316,9 +307,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="171" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597515527654" />
-    <state x="208" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1598035184920">
+    <state x="208" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1598038620632">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="208" y="88" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598035184920" />
+    <state x="208" y="88" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598038620632" />
   </component>
 </project>
