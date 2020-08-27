@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -91,9 +93,15 @@ class Property
      */
     private $created_at;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\PropertyOption", mappedBy="properties")
+     */
+    private $propertyOptions;
+
     public  function  __construct()
     {
         $this->created_at = new \DateTime();
+        $this->propertyOptions = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -263,6 +271,34 @@ class Property
     public function setCreatedAt(\DateTimeInterface $created_at): self
     {
         $this->created_at = $created_at;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|PropertyOption[]
+     */
+    public function getPropertyOptions(): Collection
+    {
+        return $this->propertyOptions;
+    }
+
+    public function addPropertyOption(PropertyOption $propertyOption): self
+    {
+        if (!$this->propertyOptions->contains($propertyOption)) {
+            $this->propertyOptions[] = $propertyOption;
+            $propertyOption->addProperty($this);
+        }
+
+        return $this;
+    }
+
+    public function removePropertyOption(PropertyOption $propertyOption): self
+    {
+        if ($this->propertyOptions->contains($propertyOption)) {
+            $this->propertyOptions->removeElement($propertyOption);
+            $propertyOption->removeProperty($this);
+        }
 
         return $this;
     }

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit PropertyOption{% endblock %}
+
+{% block body %}
+    <h1>Edit PropertyOption</h1>
+
+    {{ include('property_option/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('property_option_index') }}">back to list</a>
+
+    {{ include('property_option/_delete_form.html.twig') }}
+{% endblock %}
