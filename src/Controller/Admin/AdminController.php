@@ -8,11 +8,14 @@ use App\Form\PropertyType;
 use App\Repository\PropertyRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\ORM\EntityManagerInterface;
+use Liip\ImagineBundle\Imagine\Cache\CacheManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Vich\UploaderBundle\Templating\Helper\UploaderHelper;
 
 class AdminController extends AbstractController
 {
@@ -69,6 +72,8 @@ class AdminController extends AbstractController
      * @Route("/admin/property/{id}", name="admin.property.edit", methods="GET|POST")
      * @param Property $property
      * @param Request $request
+     * @param CacheManager $cacheManager
+     * @param UploaderHelper $uploaderHelper
      * @return Response
      */
     public function edit(Property $property, Request $request)
@@ -78,6 +83,12 @@ class AdminController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            /* vérification de l'image
+            if ($property->getImageFile() instanceof UploadedFile) {
+                $cacheManager->remove($uploaderHelper->asset($property, 'imageFile'));
+            } */
+
             $this->em->flush();
             $this->addFlash('success', "Bien modifié avec succès!");
             return  $this->redirectToRoute('admin.property.index');
