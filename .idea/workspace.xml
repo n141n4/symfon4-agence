@@ -17,22 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefdef2b-957d-4bd2-9f9d-f35371e1a742" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/properties/5f480748e80c9932207577.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/properties/5f480aa83d43a557997421.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Listner/ImageCacheSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200827185722.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200827191250.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notification/ContactNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/emails/contact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listner/ImageCacheSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +228,8 @@
       <workItem from="1598196608745" duration="3929000" />
       <workItem from="1598541798650" duration="8423000" />
       <workItem from="1598597873258" duration="911000" />
-      <workItem from="1598628175615" duration="3219000" />
+      <workItem from="1598628175615" duration="4644000" />
+      <workItem from="1598716227746" duration="6570000" />
     </task>
     <servers />
   </component>
@@ -284,10 +277,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="25" y="189" width="543" height="408" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1598628464371" />
-    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1598554553926">
+    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1598723835872">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598554553926" />
+    <state x="148" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1598723835872" />
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598207103255">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -328,10 +321,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="346" y="171" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1598554774065" />
-    <state x="0" y="0" width="672" height="678" key="search.everywhere.popup" timestamp="1598636909046">
+    <state x="0" y="0" width="672" height="678" key="search.everywhere.popup" timestamp="1598726256737">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="0" y="0" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598636909046" />
+    <state x="0" y="0" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598726256737" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -340,6 +333,11 @@
           <url>file://$PROJECT_DIR$/src/Controller/Admin/AdminPropertyOptionController.php</url>
           <line>61</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Form/ContactType.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

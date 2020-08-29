@@ -2,6 +2,11 @@
 {% block body %}
     <div class="jumbotron">
         <div class="container">
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
             <div class="row">
                 <div class="col-md-8">
                     {% if property.filename %}
@@ -13,6 +18,22 @@
                     <h1>{{ property.rooms }} pièces - {{ property.surface }} m2</h1>
                     <div class="text-primary" style="font-size: 4rem; font-weight: bold">{{ property.formattedPrice }} Ar</div>
                     <a href="" class="btn btn-primary">Contacter l'agence</a>
+                    <div id="contatcForm">
+                        {{ form_start(form) }}
+                    </div>
+                    <div class="row">
+                        <div class="col">{{ form_row(form.firstname) }}</div>
+                        <div class="col">{{ form_row(form.lastname) }}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">{{ form_row(form.phone) }}</div>
+                        <div class="col">{{ form_row(form.email) }}</div>
+                    </div>
+                    {{ form_rest(form) }}
+                    <div class="form-goup">
+                        <button type="submit" class="btn-primary">Envoyer</button>
+                    </div>
+                    {{ form_end(form) }}
                 </div>
             </div>
         </div>

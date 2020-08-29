@@ -2,9 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\Contact;
 use App\Entity\Property;
 use App\Entity\PropertySearch;
+use App\Form\ContactType;
 use App\Form\PropertySearchType;
+use App\Notification\ContactNotification;
 use App\Repository\PropertyRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Knp\Component\Pager\Pagination\PaginationInterface;
@@ -81,14 +84,35 @@ class PropertyController extends AbstractController
 
     /**
      * @Route("/biens/{id}", name="property.show")
+     * @param $id
+     * @param Property $property
+     * @param Request $request
+     * @param ContactNotification $notification
      * @return Response
      */
-    public  function show($id): Response
+    public  function show($id, Property $property, Request $request, ContactNotification $notification): Response
     {
+
         $property = $this->repository->find($id); // récupérer un bien
+
+        $contact = new Contact();
+        $contact->setProperty($property);
+        $form = $this->createForm(ContactType::class);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid())
+        {
+            $notification->notify($contact);
+            $this->addFlash('success', 'Votre email a été bien envoyé');
+            return $this->redirectToRoute('property.show', [
+                'id' => $property->getId()
+            ]);
+        }
+
         return $this->render('property/show.html.twig', [
             'property' => $property,
             'current_menu' => 'properties',
+            'form' =>  $form->createView()
         ]);
     }
 }
