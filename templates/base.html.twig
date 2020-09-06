@@ -34,7 +34,10 @@
     </div>
 </nav>
 {% block body %}{% endblock %}
+<script src="jquery/jquery-3.3.1.js"></script>
 {% block javascripts %}
 {% endblock %}
+{{ encore_entry_link_tags('app')}}
+{{ encore_entry_script_tags('app') | replace({'src=': 'defer src='}) | raw}}
 </body>
 </html>
